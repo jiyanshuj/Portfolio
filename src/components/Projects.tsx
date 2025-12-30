@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Brain, Activity, GraduationCap, FileText } from 'lucide-react';
+import { ExternalLink, Github, Brain, Activity, GraduationCap, FileText, Presentation, Compass } from 'lucide-react';
 
 type Project = {
   id: number;
@@ -27,9 +27,189 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Student Campus Cloud Network",
+      description: "A full-stack, cloud-based smart campus management system integrating AI attendance (face recognition), PaperVista, AutoSlideX, Smart Career Guidance, Student Forum, E-Canteen, E-Library, and Online Fee Payment with secure role-based access for Teacher, Student, Admin, and Guest panels, serving 10+ users.",
+      image: "/images/Student-Campus-Cloud-Network.png.png",
+      tags: ["AI", "Cloud Computing", "Full Stack", "Campus Management"],
+      features: [
+        "AI-powered face recognition attendance",
+        "Integrated PaperVista & AutoSlideX",
+        "Smart Career Guidance System",
+        "Student Forum & E-Library",
+        "E-Canteen & Online Fee Payment",
+        "Role-based access (Teacher/Student/Admin/Guest)"
+      ],
+      technologies: [
+        "React.js",
+        "Python",
+        "Flask",
+        "FastAPI",
+        "Machine Learning",
+        "KNN",
+        "Gemini API",
+        "Supabase",
+        "PostgreSQL",
+        "REST APIs"
+      ],
+      githubUrl: "https://github.com/Yug-Bothra/NEURO_CAMPUS",
+      liveUrl: "https://neuro-campus-73w8.vercel.app/",
+      icon: <GraduationCap className="w-6 h-6" />
+    },
+    {
+      id: 2,
+      title: "Smart Career Guidance System",
+      description: "An AI-driven career assessment and guidance platform that evaluates students across core computer science domains including OS, DBMS, Compiler Design, OOP, and Programming. The system analyzes performance, tracks progress, and recommends personalized career paths and learning resources to support informed decision-making.",
+      image: "/images/Smart-Career-Guidance-System.png",
+      tags: ["AI", "Career Guidance", "EdTech"],
+      features: [
+        "Domain-wise assessment (OS, DBMS, CD, OOP, Programming)",
+        "Skill evaluation and progress analysis",
+        "Personalized career path recommendations",
+        "Curated learning resource suggestions",
+        "Real-time progress tracking dashboard",
+        "Secure authentication and user management"
+      ],
+      technologies: [
+        "React.js",
+        "Python",
+        "FastAPI",
+        "Clerk Authentication",
+        "Supabase",
+        "PostgreSQL",
+        "REST API"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/Smart-Career-Guidance-System",
+      liveUrl: "https://smart-career-guidance-system.vercel.app/",
+      icon: <Compass className="w-6 h-6" />
+    },
+    {
+      id: 3,
+      title: "AutoSlideX",
+      description: "An AI-powered presentation generation platform that converts a simple topic into a complete, structured PowerPoint. It follows a two-step AI workflow where users first customize slide headings and then generate detailed content with relevant images and diagrams.",
+      image: "/images/AutoSlideX.png",
+      tags: ["AI", "Presentation", "Productivity"],
+      features: [
+        "Two-step AI-based slide generation",
+        "Editable slide structure before final creation",
+        "Automatic content generation per slide",
+        "Context-aware image fetching",
+        "Architecture & diagram-aware slides",
+        "Download-ready PowerPoint output"
+      ],
+      technologies: [
+        "React",
+        "FastAPI",
+        "Python",
+        "Gemini API",
+        "Google Custom Search API",
+        "PPTX",
+        "REST API"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/AutoSlideX",
+      liveUrl: "https://auto-slide-x.vercel.app/",
+      icon: <Presentation className="w-6 h-6" />
+    },
+    {
+      id: 4,
+      title: "PaperVista",
+      description: "A smart AI-powered question paper generator designed for college examinations. PaperVista generates MST-1, MST-2, and End-Semester question papers in a proper university-style format based on subject, syllabus, and marks distribution.",
+      image: "/images/PaperVista.png",
+      tags: ["AI", "Education", "Exam Automation"],
+      features: [
+        "MST-1, MST-2, and End-Sem paper generation",
+        "College-standard question paper format",
+        "Configurable number of questions and marks",
+        "Balanced difficulty level",
+        "Syllabus-based paper generation",
+        "Downloadable question paper output"
+      ],
+      technologies: [
+        "React",
+        "FastAPI",
+        "Python",
+        "Gemini API",
+        "REST API",
+        "JSON"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/PaperVista",
+      liveUrl: "https://paper-vista-five.vercel.app/",
+      icon: <FileText className="w-6 h-6" />
+    },
+    {
+      id: 5,
+      title: "Health Guard AI",
+      description: "A machine learning-powered web application designed to predict diseases like Diabetes, Heart Disease, and Parkinson's based on user input. Utilizes pre-trained models and Streamlit for an intuitive user experience.",
+      image: "/images/Health-Guard-AI.png",
+      tags: ["Python", "Machine Learning", "Healthcare"],
+      features: [
+        "Disease Prediction",
+        "Health Analysis",
+        "Custom Navigation",
+        "User Interface"
+      ],
+      technologies: [
+        "Python",
+        "Streamlit",
+        "scikit-learn",
+        "Pandas",
+        "NumPy"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/Health-Guard-AI",
+      liveUrl: "https://health-guard-ai.streamlit.app/",
+      icon: <Brain className="w-6 h-6" />
+    },
+    {
+      id: 6,
+      title: "NextStep Resume",
+      description: "A full-stack web application for generating professional resumes with a modern tech stack. Features include dynamic form handling, real-time preview, and document generation.",
+      image: "/images/NextStep-CV.png",
+      tags: ["TypeScript", "Python", "Full Stack"],
+      features: [
+        "Dynamic form handling",
+        "Real-time preview",
+        "Document generation",
+        "Responsive design",
+        "Type safety",
+        "Modern UI/UX"
+      ],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Flask",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Python-docx"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/Resume-Gen",
+      liveUrl: "https://nextstep-resume.netlify.app/",
+      icon: <FileText className="w-6 h-6" />
+    },
+    {
+      id: 7,
+      title: "Sustainable Travel Planner",
+      description: "An eco-friendly travel planning application that helps users make environmentally conscious travel decisions. Developed during Hack Wave Hackathon.",
+      image: "https://images.pexels.com/photos/7412069/pexels-photo-7412069.jpeg",
+      tags: ["Python", "Web Development", "Sustainability"],
+      features: [
+        "Carbon footprint calculation",
+        "Eco-friendly routes",
+        "Impact tracking"
+      ],
+      technologies: [
+        "Python",
+        "Django",
+        "JavaScript",
+        "HTML/CSS",
+        "APIs"
+      ],
+      githubUrl: "https://github.com/jiyanshuj/Errror-404-v1-",
+      icon: <Activity className="w-6 h-6" />
+    },
+    {
+      id: 8,
       title: "Skills Bridge Platform",
       description: "An AI-powered educational platform bridging the gap between academic learning and job skills. The platform features personalized learning paths, skill gap analysis, and industry collaboration portal.",
-      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+      image: "/images/Skills-Bridge-Platform.png",
       tags: ["AI", "Education", "Web Development"],
       features: [
         "AI-driven skill gap analysis",
@@ -51,75 +231,6 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/jiyanshuj/project",
       liveUrl: "https://skillpulse.netlify.app/",
       icon: <GraduationCap className="w-6 h-6" />
-    },
-    {
-      id: 2,
-      title: "Health Guard AI",
-      description: "A machine learning-powered web application designed to predict diseases like Diabetes, Heart Disease, and Parkinson's based on user input. Utilizes pre-trained models and Streamlit for an intuitive user experience.",
-      image: "https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg",
-      tags: ["Python", "Machine Learning", "Healthcare"],
-      features: [
-        "Disease Prediction",
-        "Health Analysis",
-        "Custom Navigation",
-        "User Interface"
-      ],
-      technologies: [
-        "Python",
-        "Streamlit",
-        "scikit-learn",
-        "Pandas",
-        "NumPy"
-      ],
-      githubUrl: "https://github.com/jiyanshuj/Health-Guard-AI",
-      liveUrl: "https://health-guard-ai.streamlit.app/",
-      icon: <Brain className="w-6 h-6" />
-    },
-    {
-      id: 3,
-      title: "Sustainable Travel Planner",
-      description: "An eco-friendly travel planning application that helps users make environmentally conscious travel decisions. Developed during Hack Wave Hackathon.",
-      image: "https://images.pexels.com/photos/7412069/pexels-photo-7412069.jpeg",
-      tags: ["Python", "Web Development", "Sustainability"],
-      features: [
-        "Carbon footprint calculation",
-        "Eco-friendly routes",
-        "Impact tracking"
-      ],
-      technologies: [
-        "Python",
-        "Django",
-        "JavaScript",
-        "HTML/CSS",
-        "APIs"
-      ],
-      githubUrl: "https://github.com/jiyanshuj/Errror-404-v1-",
-      icon: <Activity className="w-6 h-6" />
-    },
-    {
-      id: 4,
-      title: "Resume Gen",
-      description: "A full-stack web application for generating professional resumes with a modern tech stack. Features include dynamic form handling, real-time preview, and document generation.",
-      image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg",
-      tags: ["TypeScript", "Python", "Full Stack"],
-      features: [
-        "Dynamic form handling",
-        "Real-time preview",
-        "Document generation",
-        "Responsive design",
-        "Type safety",
-        "Modern UI/UX"
-      ],
-      technologies: [
-        "React",
-        "TypeScript",
-        "Flask",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Python-docx"
-      ],
-      githubUrl: "https://github.com/jiyanshuj/Resume-Gen",
-      icon: <FileText className="w-6 h-6" />
     }
   ];
 
@@ -134,10 +245,10 @@ const Projects: React.FC = () => {
           return ['Web Development', 'Full Stack', 'TypeScript'].some(tag => project.tags.includes(tag));
         }
         if (activeFilter === 'AI/ML') {
-          return ['AI', 'Machine Learning', 'Python', 'Healthcare', 'Education'].some(tag => project.tags.includes(tag));
+          return ['AI', 'Machine Learning', 'Python', 'Healthcare', 'Education', 'Presentation', 'Productivity', 'Career Guidance', 'EdTech', 'Exam Automation', 'Campus Management', 'Cloud Computing'].some(tag => project.tags.includes(tag));
         }
         if (activeFilter === 'APIs') {
-          return project.technologies.includes('APIs');
+          return project.technologies.includes('APIs') || project.technologies.includes('REST API');
         }
         return false;
       });
