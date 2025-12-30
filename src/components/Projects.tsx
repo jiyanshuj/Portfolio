@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: "Student Campus Cloud Network",
       description: "A full-stack, cloud-based smart campus management system integrating AI attendance (face recognition), PaperVista, AutoSlideX, Smart Career Guidance, Student Forum, E-Canteen, E-Library, and Online Fee Payment with secure role-based access for Teacher, Student, Admin, and Guest panels, serving 10+ users.",
-      image: "/images/Student-Campus-Cloud-Network.png.png",
+      image: "images/Student-Campus-Cloud-Network.png",
       tags: ["AI", "Cloud Computing", "Full Stack", "Campus Management"],
       features: [
         "AI-powered face recognition attendance",
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: "Smart Career Guidance System",
       description: "An AI-driven career assessment and guidance platform that evaluates students across core computer science domains including OS, DBMS, Compiler Design, OOP, and Programming. The system analyzes performance, tracks progress, and recommends personalized career paths and learning resources to support informed decision-making.",
-      image: "/images/Smart-Career-Guidance-System.png",
+      image: "images/Smart-Career-Guidance-System.png",
       tags: ["AI", "Career Guidance", "EdTech"],
       features: [
         "Domain-wise assessment (OS, DBMS, CD, OOP, Programming)",
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "AutoSlideX",
       description: "An AI-powered presentation generation platform that converts a simple topic into a complete, structured PowerPoint. It follows a two-step AI workflow where users first customize slide headings and then generate detailed content with relevant images and diagrams.",
-      image: "/images/AutoSlideX.png",
+      image: "images/AutoSlideX.png",
       tags: ["AI", "Presentation", "Productivity"],
       features: [
         "Two-step AI-based slide generation",
@@ -113,7 +113,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: "PaperVista",
       description: "A smart AI-powered question paper generator designed for college examinations. PaperVista generates MST-1, MST-2, and End-Semester question papers in a proper university-style format based on subject, syllabus, and marks distribution.",
-      image: "/images/PaperVista.png",
+      image: "images/PaperVista.png",
       tags: ["AI", "Education", "Exam Automation"],
       features: [
         "MST-1, MST-2, and End-Sem paper generation",
@@ -139,7 +139,7 @@ const Projects: React.FC = () => {
       id: 5,
       title: "Health Guard AI",
       description: "A machine learning-powered web application designed to predict diseases like Diabetes, Heart Disease, and Parkinson's based on user input. Utilizes pre-trained models and Streamlit for an intuitive user experience.",
-      image: "/images/Health-Guard-AI.png",
+      image: "images/Health-Guard-AI.png",
       tags: ["Python", "Machine Learning", "Healthcare"],
       features: [
         "Disease Prediction",
@@ -162,7 +162,7 @@ const Projects: React.FC = () => {
       id: 6,
       title: "NextStep Resume",
       description: "A full-stack web application for generating professional resumes with a modern tech stack. Features include dynamic form handling, real-time preview, and document generation.",
-      image: "/images/NextStep-CV.png",
+      image: "images/NextStep-CV.png",
       tags: ["TypeScript", "Python", "Full Stack"],
       features: [
         "Dynamic form handling",
@@ -209,7 +209,7 @@ const Projects: React.FC = () => {
       id: 8,
       title: "Skills Bridge Platform",
       description: "An AI-powered educational platform bridging the gap between academic learning and job skills. The platform features personalized learning paths, skill gap analysis, and industry collaboration portal.",
-      image: "/images/Skills-Bridge-Platform.png",
+      image: "images/Skills-Bridge-Platform.png",
       tags: ["AI", "Education", "Web Development"],
       features: [
         "AI-driven skill gap analysis",
