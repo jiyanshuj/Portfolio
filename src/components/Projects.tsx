@@ -203,6 +203,7 @@ const Projects: React.FC = () => {
         "APIs"
       ],
       githubUrl: "https://github.com/jiyanshuj/Errror-404-v1-",
+      liveUrl: "https://error-404-v1-1.onrender.com/",
       icon: <Activity className="w-6 h-6" />
     },
     {
